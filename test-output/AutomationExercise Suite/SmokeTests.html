@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>TestNG:  SmokeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SmokeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 10 01:30:57 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>46 seconds (46288 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_testcases_nav()'><b>tc_testcases_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Test Cases nav is present & working</td>
+<td></td>
+<td>2</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_home_nav()'><b>tc_home_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Home nav is present & working</td>
+<td></td>
+<td>3</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_video_nav()'><b>tc_video_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Video Tutorials nav is present & working</td>
+<td></td>
+<td>6</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_contact_page_loads()'><b>tc_contact_page_loads</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Contact Us page loads correctly on Chrome</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_signup_nav()'><b>tc_signup_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Signup/Login nav is present & working</td>
+<td></td>
+<td>2</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_name_field_present()'><b>tc_name_field_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Name field box is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_email_field_present()'><b>tc_email_field_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Email field box is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_contact_nav()'><b>tc_contact_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Contact Us nav is present & working</td>
+<td></td>
+<td>2</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_products_nav()'><b>tc_products_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Products nav is present & working</td>
+<td></td>
+<td>3</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_api_nav()'><b>tc_api_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: API Testing nav is present & working</td>
+<td></td>
+<td>3</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_choose_file_present()'><b>tc_choose_file_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Choose file button is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_submit_button_present()'><b>tc_submit_button_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Submit button is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_cart_nav()'><b>tc_cart_nav</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Cart nav is present & working</td>
+<td></td>
+<td>3</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_feedback_section_present()'><b>tc_feedback_section_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Feedback for Us section is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_logo_present()'><b>tc_logo_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: AutomationExercise logo/button present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_feedback_mail_present()'><b>tc_feedback_mail_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: feedback@automationexercise.com mail is present in feedback section</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_footer_present()'><b>tc_footer_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Footer copyright present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_message_field_present()'><b>tc_message_field_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Your message field is present</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_get_in_touch_title()'><b>tc_get_in_touch_title</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Get In Touch title present in centre of form section</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_subject_field_present()'><b>tc_subject_field_present</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Subject field box is present</td>
+<td></td>
+<td>1</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+<tr>
+<td title='com.myproject.tests.ContactUsPageUITest.tc_contact_title_centered()'><b>tc_contact_title_centered</b><br>Test class: com.myproject.tests.ContactUsPageUITest<br>Test method: Contact Us title present in center of page</td>
+<td></td>
+<td>0</td>
+<td>com.myproject.tests.ContactUsPageUITest@2bdd8394</td></tr>
+</table><p>
+</body>
+</html>
