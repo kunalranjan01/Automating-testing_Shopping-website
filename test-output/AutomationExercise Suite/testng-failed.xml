@@ -7,13 +7,13 @@
   <test thread-count="5" name="SmokeTests(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.myproject.tests.ApiListPageUITest">
+      <class name="com.myproject.tests.SignupRegistrationTest">
         <methods>
-          <include name="tc_14_api_endpoints_listed"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="tc_signup_and_register" invocation-numbers="3"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.myproject.tests.ApiListPageUITest -->
+      </class> <!-- com.myproject.tests.SignupRegistrationTest -->
     </classes>
   </test> <!-- SmokeTests(failed) -->
 </suite> <!-- Failed suite [AutomationExercise Suite] -->

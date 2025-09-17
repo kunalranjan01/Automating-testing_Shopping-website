@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.myproject.tests.ApiListPageUITest">
+      <class name="com.myproject.tests.SignupRegistrationTest">
         <methods>
-          <include name="tc_14_api_endpoints_listed"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="tc_signup_and_register"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.myproject.tests.ApiListPageUITest -->
+      </class> <!-- com.myproject.tests.SignupRegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

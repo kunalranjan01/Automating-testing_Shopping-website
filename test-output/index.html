@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AutomationExercise_Suite" class="navigator-link">
-              <span class="suite-name border-passed">AutomationExercise Suite</span>
+              <span class="suite-name border-failed">AutomationExercise Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomationExercise_Suite" class="hide-methods failed suite-AutomationExercise_Suite"> (hide)</a> <!-- hide-methods failed suite-AutomationExercise_Suite -->
+                      <a href="#" panel-name="suite-AutomationExercise_Suite" class="show-methods failed suite-AutomationExercise_Suite"> (show)</a> <!-- show-methods failed suite-AutomationExercise_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomationExercise_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLas...)">tc_signup_and_register([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomationExercise_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,107 +117,37 @@
                     <div class="method-list-content passed suite-AutomationExercise_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_api_nav">tc_api_nav</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, T...)">tc_signup_and_register([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, T...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_cart_nav">tc_cart_nav</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, ye...)">tc_signup_and_register([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, ye...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_choose_file_present">tc_choose_file_present</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes,...)">tc_signup_and_register([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_contact_nav">tc_contact_nav</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Sh...)">tc_signup_and_register([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Sh...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_contact_page_loads">tc_contact_page_loads</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992,...)">tc_signup_and_register([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_contact_title_centered">tc_contact_title_centered</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, J...)">tc_signup_and_register([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, J...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_email_field_present">tc_email_field_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_feedback_mail_present">tc_feedback_mail_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_feedback_section_present">tc_feedback_section_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_footer_present">tc_footer_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_get_in_touch_title">tc_get_in_touch_title</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_home_nav">tc_home_nav</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_logo_present">tc_logo_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_message_field_present">tc_message_field_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_name_field_present">tc_name_field_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_products_nav">tc_products_nav</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_signup_nav">tc_signup_nav</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_subject_field_present">tc_subject_field_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_submit_button_present">tc_submit_button_present</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_testcases_nav">tc_testcases_nav</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.ContactUsPageUITest" class="method navigator-link" hash-for-method="tc_video_nav">tc_video_nav</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AutomationExercise_Suite" title="com.myproject.tests.SignupRegistrationTest" class="method navigator-link" hash-for-method="tc_signup_and_register([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, C...)">tc_signup_and_register([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, C...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AutomationExercise_Suite -->
@@ -218,199 +162,103 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AutomationExercise_Suite" class="panel AutomationExercise_Suite">
-          <div class="suite-AutomationExercise_Suite-class-passed">
+          <div class="suite-AutomationExercise_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.myproject.tests.ContactUsPageUITest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.myproject.tests.SignupRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_api_nav">
-                  </a> <!-- tc_api_nav -->
-                  <span class="method-name">tc_api_nav</span>
+                  <a name="tc_signup_and_register([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLas...)">
+                  </a> <!-- tc_signup_and_register([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLas...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLast, 404 Fourth Blvd, Australia, NSW, Sydney, 2000, 6543210987])</span>
+                  <div class="stack-trace">java.lang.AssertionError: Registration submit did not detect success
+	at com.myproject.tests.SignupRegistrationTest.tc_signup_and_register(SignupRegistrationTest.java:113)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(API Testing nav is present & working)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationExercise_Suite-class-failed -->
+          <div class="suite-AutomationExercise_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.myproject.tests.SignupRegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_signup_and_register([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, T...)">
+                  </a> <!-- tc_signup_and_register([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, T...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, Test, 101 Main St, United States, Texas, Dallas, 75201, 9876543210])</span>
+                  <em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_cart_nav">
-                  </a> <!-- tc_cart_nav -->
-                  <span class="method-name">tc_cart_nav</span>
+                  <a name="tc_signup_and_register([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, ye...)">
+                  </a> <!-- tc_signup_and_register([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, ye...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, yes, no, Existing, User, 505 Fifth St, United Kingdom, London, London, EC1A1BB, 5432109876])</span>
                   <em>
-(Cart nav is present & working)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_choose_file_present">
-                  </a> <!-- tc_choose_file_present -->
-                  <span class="method-name">tc_choose_file_present</span>
+                  <a name="tc_signup_and_register([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes,...)">
+                  </a> <!-- tc_signup_and_register([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes,...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes, No, Mobile, 707 Seventh Ave, India, Karnataka, Bengaluru, 560001, ])</span>
                   <em>
-(Choose file button is present)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_contact_nav">
-                  </a> <!-- tc_contact_nav -->
-                  <span class="method-name">tc_contact_nav</span>
+                  <a name="tc_signup_and_register([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Sh...)">
+                  </a> <!-- tc_signup_and_register([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Sh...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Short, Pass, 606 Sixth Rd, United States, CA, Los Angeles, 90001, 4321098765])</span>
                   <em>
-(Contact Us nav is present & working)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_contact_page_loads">
-                  </a> <!-- tc_contact_page_loads -->
-                  <span class="method-name">tc_contact_page_loads</span>
+                  <a name="tc_signup_and_register([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992,...)">
+                  </a> <!-- tc_signup_and_register([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992,...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992, yes, yes, Inv, Email, 303 Third Rd, Canada, Ontario, Toronto, M1A1A1, 7654321098])</span>
                   <em>
-(Contact Us page loads correctly on Chrome)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_contact_title_centered">
-                  </a> <!-- tc_contact_title_centered -->
-                  <span class="method-name">tc_contact_title_centered</span>
+                  <a name="tc_signup_and_register([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, J...)">
+                  </a> <!-- tc_signup_and_register([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, J...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, Jane, Smith, 202 Second Ave, India, Delhi, New Delhi, 110001, 8765432109])</span>
                   <em>
-(Contact Us title present in center of page)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_email_field_present">
-                  </a> <!-- tc_email_field_present -->
-                  <span class="method-name">tc_email_field_present</span>
+                  <a name="tc_signup_and_register([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, C...)">
+                  </a> <!-- tc_signup_and_register([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, C...) -->
+                  <span class="method-name">tc_signup_and_register</span>
+                  <span class="parameters">([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, Complete, User, 808 Eighth Blvd, United States, NY, New York, 10001, 3210987654])</span>
                   <em>
-(Email field box is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_feedback_mail_present">
-                  </a> <!-- tc_feedback_mail_present -->
-                  <span class="method-name">tc_feedback_mail_present</span>
-                  <em>
-(feedback@automationexercise.com mail is present in feedback section)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_feedback_section_present">
-                  </a> <!-- tc_feedback_section_present -->
-                  <span class="method-name">tc_feedback_section_present</span>
-                  <em>
-(Feedback for Us section is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_footer_present">
-                  </a> <!-- tc_footer_present -->
-                  <span class="method-name">tc_footer_present</span>
-                  <em>
-(Footer copyright present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_get_in_touch_title">
-                  </a> <!-- tc_get_in_touch_title -->
-                  <span class="method-name">tc_get_in_touch_title</span>
-                  <em>
-(Get In Touch title present in centre of form section)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_home_nav">
-                  </a> <!-- tc_home_nav -->
-                  <span class="method-name">tc_home_nav</span>
-                  <em>
-(Home nav is present & working)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_logo_present">
-                  </a> <!-- tc_logo_present -->
-                  <span class="method-name">tc_logo_present</span>
-                  <em>
-(AutomationExercise logo/button present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_message_field_present">
-                  </a> <!-- tc_message_field_present -->
-                  <span class="method-name">tc_message_field_present</span>
-                  <em>
-(Your message field is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_name_field_present">
-                  </a> <!-- tc_name_field_present -->
-                  <span class="method-name">tc_name_field_present</span>
-                  <em>
-(Name field box is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_products_nav">
-                  </a> <!-- tc_products_nav -->
-                  <span class="method-name">tc_products_nav</span>
-                  <em>
-(Products nav is present & working)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_signup_nav">
-                  </a> <!-- tc_signup_nav -->
-                  <span class="method-name">tc_signup_nav</span>
-                  <em>
-(Signup/Login nav is present & working)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_subject_field_present">
-                  </a> <!-- tc_subject_field_present -->
-                  <span class="method-name">tc_subject_field_present</span>
-                  <em>
-(Subject field box is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_submit_button_present">
-                  </a> <!-- tc_submit_button_present -->
-                  <span class="method-name">tc_submit_button_present</span>
-                  <em>
-(Submit button is present)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_testcases_nav">
-                  </a> <!-- tc_testcases_nav -->
-                  <span class="method-name">tc_testcases_nav</span>
-                  <em>
-(Test Cases nav is present & working)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc_video_nav">
-                  </a> <!-- tc_video_nav -->
-                  <span class="method-name">tc_video_nav</span>
-                  <em>
-(Video Tutorials nav is present & working)                  </em>
+(Signup -> Registration; append only email+password into Sheet2 (generated copy))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -431,7 +279,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.myproject.tests.ContactUsPageUITest&quot;/&gt;
+      &lt;class name=&quot;com.myproject.tests.SignupRegistrationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SmokeTests --&gt;
 &lt;/suite&gt; &lt;!-- AutomationExercise Suite --&gt;
@@ -471,96 +319,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_video_nav')
-data.setCell(0, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(0, 3, 6663);
+data.setCell(0, 1, 'tc_signup_and_register')
+data.setCell(0, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(0, 3, 62863);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_home_nav')
-data.setCell(1, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(1, 3, 3706);
+data.setCell(1, 1, 'tc_signup_and_register')
+data.setCell(1, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(1, 3, 45288);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc_products_nav')
-data.setCell(2, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(2, 3, 3358);
+data.setCell(2, 1, 'tc_signup_and_register')
+data.setCell(2, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(2, 3, 44563);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc_cart_nav')
-data.setCell(3, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(3, 3, 3309);
+data.setCell(3, 1, 'tc_signup_and_register')
+data.setCell(3, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(3, 3, 44552);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc_api_nav')
-data.setCell(4, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(4, 3, 3226);
+data.setCell(4, 1, 'tc_signup_and_register')
+data.setCell(4, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(4, 3, 44435);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc_testcases_nav')
-data.setCell(5, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(5, 3, 2654);
+data.setCell(5, 1, 'tc_signup_and_register')
+data.setCell(5, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(5, 3, 44347);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'tc_signup_nav')
-data.setCell(6, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(6, 3, 2154);
+data.setCell(6, 1, 'tc_signup_and_register')
+data.setCell(6, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(6, 3, 44231);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'tc_contact_nav')
-data.setCell(7, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(7, 3, 2145);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'tc_subject_field_present')
-data.setCell(8, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(8, 3, 1084);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'tc_contact_title_centered')
-data.setCell(9, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(9, 3, 958);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'tc_contact_page_loads')
-data.setCell(10, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(10, 3, 932);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'tc_name_field_present')
-data.setCell(11, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(11, 3, 894);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'tc_feedback_mail_present')
-data.setCell(12, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(12, 3, 835);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'tc_message_field_present')
-data.setCell(13, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(13, 3, 830);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'tc_footer_present')
-data.setCell(14, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(14, 3, 827);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'tc_choose_file_present')
-data.setCell(15, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(15, 3, 790);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'tc_logo_present')
-data.setCell(16, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(16, 3, 730);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'tc_email_field_present')
-data.setCell(17, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(17, 3, 708);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'tc_get_in_touch_title')
-data.setCell(18, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(18, 3, 670);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'tc_submit_button_present')
-data.setCell(19, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(19, 3, 654);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'tc_feedback_section_present')
-data.setCell(20, 2, 'com.myproject.tests.ContactUsPageUITest')
-data.setCell(20, 3, 633);
+data.setCell(7, 1, 'tc_signup_and_register')
+data.setCell(7, 2, 'com.myproject.tests.SignupRegistrationTest')
+data.setCell(7, 3, 44231);
 window.suiteTableData['AutomationExercise_Suite']= { tableData: data, tableDiv: 'times-div-AutomationExercise_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-AutomationExercise_Suite">
               </div> <!-- times-div-AutomationExercise_Suite -->
             </div> <!-- times-div -->
@@ -586,99 +382,105 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.myproject.tests.ContactUsPageUITest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
+              <div class="chronological-class-name">com.myproject.tests.SignupRegistrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_api_nav</span>
-                <span class="method-start">7870 ms</span>
+                <span class="method-name">tc_signup_and_register([John Test, +1758041150651+1758144282027@example.com, Pass@123, 3, February, 1991, yes, yes, John, T...)</span>
+                <span class="method-start">4747 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">50295 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_cart_nav</span>
-                <span class="method-start">11117 ms</span>
+                <span class="method-name">tc_signup_and_register([Jane Smith, jane.smith+1758041150655+1758144282035@example.com, Pass@123, 28, May, 1973, yes, no, J...)</span>
+                <span class="method-start">53635 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">98200 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">98380 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_choose_file_present</span>
-                <span class="method-start">14432 ms</span>
+                <span class="method-name">tc_signup_and_register([InvalidEmail, invalid-email+1758041150656+1758144282036@example.com, Pass@123, 17, September, 1992,...)</span>
+                <span class="method-start">101393 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">145946 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">146196 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_contact_nav</span>
-                <span class="method-start">15227 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc_signup_and_register([EmptyName, auto1758041150658+1758144282038@example.com, Pass@123, 8, April, 1972, yes, yes, , NoLas...)</span>
+                <span class="method-start">148874 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">211940 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">212185 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_contact_page_loads</span>
-                <span class="method-start">17378 ms</span>
+                <span class="method-name">tc_signup_and_register([ExistingUser, existinguser+1758041150659+1758144282039@example.com, Pass@123, 20, January, 1985, ye...)</span>
+                <span class="method-start">216459 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">260692 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">260943 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_contact_title_centered</span>
-                <span class="method-start">18314 ms</span>
+                <span class="method-name">tc_signup_and_register([ShortPass, shortpassuser+1758041150664+1758144282041@example.com, 123, 28, June, 1971, yes, yes, Sh...)</span>
+                <span class="method-start">263572 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">307921 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">308168 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_email_field_present</span>
-                <span class="method-start">19276 ms</span>
+                <span class="method-name">tc_signup_and_register([NoMobile, nomobile+1758041150665+1758144282042@example.com, Pass@123, 14, November, 1993, yes, yes,...)</span>
+                <span class="method-start">311530 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">355762 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">355981 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc_feedback_mail_present</span>
-                <span class="method-start">19990 ms</span>
+                <span class="method-name">tc_signup_and_register([Complete, complete+1758041150666+1758144282043@example.com, Pass@123, 28, December, 1981, no, no, C...)</span>
+                <span class="method-start">359133 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_feedback_section_present</span>
-                <span class="method-start">20829 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_footer_present</span>
-                <span class="method-start">21468 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_get_in_touch_title</span>
-                <span class="method-start">22300 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_home_nav</span>
-                <span class="method-start">22974 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_logo_present</span>
-                <span class="method-start">26689 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_message_field_present</span>
-                <span class="method-start">27423 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_name_field_present</span>
-                <span class="method-start">28257 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_products_nav</span>
-                <span class="method-start">29155 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_signup_nav</span>
-                <span class="method-start">32519 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_subject_field_present</span>
-                <span class="method-start">34676 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_submit_button_present</span>
-                <span class="method-start">35764 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_testcases_nav</span>
-                <span class="method-start">36421 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_video_nav</span>
-                <span class="method-start">39082 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">45751 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">403570 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

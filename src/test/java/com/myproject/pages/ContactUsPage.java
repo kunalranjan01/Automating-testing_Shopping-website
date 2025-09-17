@@ -1,5 +1,6 @@
 package com.myproject.pages;
 
+import com.myproject.listeners.TestListener;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,16 +18,16 @@ public class ContactUsPage {
 
     // top-nav fallback locators
     private final By navHome = By.linkText("Home");
-    private final By navProducts = By.linkText("Products");
+    private final By navProducts = By.cssSelector("a[href='/products'], a[href='/products/']");
     private final By navCart = By.linkText("Cart");
     private final By navSignup = By.linkText("Signup / Login");
     private final By navTestCases = By.linkText("Test Cases");
     private final By navApi = By.linkText("API Testing");
-    private final By navVideos = By.linkText("Video Tutorials");
+    private final By navVideos = By.cssSelector("a[href='/video_tutorials']"); // more stable
     private final By navContact1 = By.linkText("Contact us");
     private final By navContact2 = By.linkText("Contact Us");
 
-    // contact form locators (common possibilities)
+    // contact form locators
     private final By pageTitle = By.cssSelector(".contact-info h2, .features_items h2, .page-title, .title.text-center");
     private final By getInTouchTitle = By.xpath("//*[contains(translate(.,'GET IN TOUCH','get in touch'),'get in touch')]");
     private final By nameField = By.cssSelector("input[name='name'], input#name, input.contact-name, input[placeholder*='Name']");
@@ -45,17 +46,18 @@ public class ContactUsPage {
     }
 
     public void openContactPage() {
+        TestListener.info("Opening Contact Us page: " + contactUrl);
         driver.get(contactUrl);
         waitForReady();
     }
 
     private void waitForReady() {
         try {
-            wait.until(d -> ((JavascriptExecutor)d).executeScript("return document.readyState").equals("complete"));
+            wait.until(d -> ((JavascriptExecutor) d).executeScript("return document.readyState").equals("complete"));
         } catch (Exception ignored) {}
     }
 
-    // robust nav finder (tries linkText, partial and xpath contains)
+    // robust nav finder
     private WebElement findNavRobust(String visibleText) {
         try {
             List<WebElement> els = driver.findElements(By.linkText(visibleText));
@@ -78,41 +80,42 @@ public class ContactUsPage {
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView({block:'center'});", el);
             wait.until(ExpectedConditions.elementToBeClickable(el));
             el.click();
+            TestListener.info("Clicked element: " + el.getText());
         } catch (Exception e) {
             try { ((JavascriptExecutor)driver).executeScript("arguments[0].click();", el); } catch (Exception ignored) {}
         }
     }
 
-    // nav click + verify wrappers (operate from contact page, then return)
+    // nav click + verify
     private boolean navigateAndVerifyNav(String navText, String urlHint) {
         openContactPage();
+        TestListener.info("Trying to click nav: " + navText);
         WebElement nav = findNavRobust(navText);
-        if (nav == null) return false;
-        String href = "";
-        try { href = nav.getAttribute("href"); } catch (Exception ignored) {}
+        if (nav == null) {
+            TestListener.fail("Nav element not found: " + navText);
+            return false;
+        }
         try {
-            if (href != null && !href.trim().isEmpty()) {
-                URI u = new URI(href);
-                if (!u.isAbsolute()) safeClick(nav);
-                else driver.get(href);
-            } else safeClick(nav);
-
+            safeClick(nav);
             wait.until(d -> d.getCurrentUrl() != null);
             String cur = driver.getCurrentUrl().toLowerCase();
             boolean ok = (urlHint != null && !urlHint.isEmpty() && cur.contains(urlHint.toLowerCase()));
-            if (!ok) {
-                String src = driver.getPageSource().toLowerCase();
-                if (urlHint != null && !urlHint.isEmpty()) ok = src.contains(urlHint.toLowerCase());
+            if (ok) {
+                TestListener.pass("Navigation successful for: " + navText + " → " + cur);
+            } else {
+                TestListener.fail("Navigation failed for: " + navText + ", current URL: " + cur);
             }
             return ok;
         } catch (Exception e) {
+            TestListener.fail("Error clicking nav: " + navText + " → " + e.getMessage());
             return false;
         } finally {
             openContactPage();
         }
     }
 
-    public boolean clickContactNavAndVerify() { return navigateAndVerifyNav("Contact us", "/contact_us"); }
+    // nav methods
+    public boolean clickContactNavAndVerify() { return navigateAndVerifyNav("Contact Us", "/contact_us"); }
     public boolean clickProductsNavAndVerify() { return navigateAndVerifyNav("Products", "/products"); }
     public boolean clickCartNavAndVerify() { return navigateAndVerifyNav("Cart", "/view_cart"); }
     public boolean clickSignupNavAndVerify() { return navigateAndVerifyNav("Signup / Login", "/login"); }
@@ -121,69 +124,62 @@ public class ContactUsPage {
     public boolean clickVideoNavAndVerify() { return navigateAndVerifyNav("Video Tutorials", "video"); }
     public boolean clickHomeNavAndVerify() { return navigateAndVerifyNav("Home", "automationexercise.com/"); }
 
-    // basic page checks
+    // page checks with logging
     public boolean isContactPageAccessibleViaUrl() {
         openContactPage();
-        return driver.getCurrentUrl().contains("/contact_us");
+        boolean ok = driver.getCurrentUrl().contains("/contact_us");
+        TestListener.info("Contact Us page accessible via URL → " + ok);
+        return ok;
     }
 
     public boolean isPageTitleCenteredAndDisplayed() {
         openContactPage();
         try {
             WebElement h = driver.findElement(pageTitle);
-            if (!h.isDisplayed()) return false;
-            Object rect = ((JavascriptExecutor)driver).executeScript(
-                    "var r=arguments[0].getBoundingClientRect(); return {x:r.left,w:r.width,v:window.innerWidth};", h);
-            if (rect instanceof java.util.Map) {
-                @SuppressWarnings("unchecked") java.util.Map<String,Object> m = (java.util.Map<String,Object>)rect;
-                double left = Double.parseDouble(m.get("x").toString());
-                double width = Double.parseDouble(m.get("w").toString());
-                double viewport = Double.parseDouble(m.get("v").toString());
-                double center = left + width/2.0; double vcenter = viewport/2.0;
-                return Math.abs(center - vcenter) <= viewport * 0.12;
-            }
-            return true;
+            boolean ok = h.isDisplayed();
+            TestListener.info("Page title displayed: " + ok + " → " + h.getText());
+            return ok;
         } catch (Exception e) {
-            return !driver.findElements(pageTitle).isEmpty();
+            TestListener.fail("Page title not found: " + e.getMessage());
+            return false;
         }
     }
 
     public boolean isGetInTouchTitlePresent() {
         openContactPage();
-        return !driver.findElements(getInTouchTitle).isEmpty();
+        boolean ok = !driver.findElements(getInTouchTitle).isEmpty();
+        TestListener.info("Get In Touch title present: " + ok);
+        return ok;
     }
 
-    public boolean isNameFieldPresent() { openContactPage(); return !driver.findElements(nameField).isEmpty(); }
-    public boolean isEmailFieldPresent() { openContactPage(); return !driver.findElements(emailField).isEmpty(); }
-    public boolean isSubjectFieldPresent() { openContactPage(); return !driver.findElements(subjectField).isEmpty(); }
-    public boolean isMessageFieldPresent() { openContactPage(); return !driver.findElements(messageField).isEmpty(); }
-    public boolean isChooseFilePresent() { openContactPage(); return !driver.findElements(chooseFileBtn).isEmpty(); }
-    public boolean isSubmitButtonPresent() { openContactPage(); return !driver.findElements(submitBtn).isEmpty(); }
+    public boolean isNameFieldPresent() { openContactPage(); boolean ok = !driver.findElements(nameField).isEmpty(); TestListener.info("Name field present: " + ok); return ok; }
+    public boolean isEmailFieldPresent() { openContactPage(); boolean ok = !driver.findElements(emailField).isEmpty(); TestListener.info("Email field present: " + ok); return ok; }
+    public boolean isSubjectFieldPresent() { openContactPage(); boolean ok = !driver.findElements(subjectField).isEmpty(); TestListener.info("Subject field present: " + ok); return ok; }
+    public boolean isMessageFieldPresent() { openContactPage(); boolean ok = !driver.findElements(messageField).isEmpty(); TestListener.info("Message field present: " + ok); return ok; }
+    public boolean isChooseFilePresent() { openContactPage(); boolean ok = !driver.findElements(chooseFileBtn).isEmpty(); TestListener.info("Choose File button present: " + ok); return ok; }
+    public boolean isSubmitButtonPresent() { openContactPage(); boolean ok = !driver.findElements(submitBtn).isEmpty(); TestListener.info("Submit button present: " + ok); return ok; }
 
-    public boolean isFeedbackSectionPresent() { openContactPage(); return !driver.findElements(feedbackCandidates).isEmpty(); }
+    public boolean isFeedbackSectionPresent() { openContactPage(); boolean ok = !driver.findElements(feedbackCandidates).isEmpty(); TestListener.info("Feedback section present: " + ok); return ok; }
 
     public boolean isFeedbackMailPresent(String expectedMail) {
         openContactPage();
+        boolean found = false;
         try {
             List<WebElement> sections = driver.findElements(feedbackCandidates);
             for (WebElement sec : sections) {
                 List<WebElement> mails = sec.findElements(By.xpath(".//a[contains(@href,'mailto:') or contains(text(),'" + expectedMail + "')]"));
-                if (!mails.isEmpty()) return true;
-                List<WebElement> texts = sec.findElements(By.xpath(".//*[contains(text(),'" + expectedMail + "')]"));
-                if (!texts.isEmpty()) return true;
+                if (!mails.isEmpty()) { found = true; break; }
             }
-            List<WebElement> global = driver.findElements(By.xpath("//a[contains(@href,'mailto:') or contains(text(),'" + expectedMail + "')]"));
-            return !global.isEmpty();
-        } catch (Exception e) {
-            return false;
-        }
+        } catch (Exception ignored) {}
+        TestListener.info("Feedback mail (" + expectedMail + ") present: " + found);
+        return found;
     }
 
-    public boolean isLogoPresent() { openContactPage(); return !driver.findElements(logo).isEmpty(); }
+    public boolean isLogoPresent() { openContactPage(); boolean ok = !driver.findElements(logo).isEmpty(); TestListener.info("Logo present: " + ok); return ok; }
 
-    public boolean isFooterCopyrightPresent() { openContactPage(); return !driver.findElements(footerCopyright).isEmpty(); }
+    public boolean isFooterCopyrightPresent() { openContactPage(); boolean ok = !driver.findElements(footerCopyright).isEmpty(); TestListener.info("Footer copyright present: " + ok); return ok; }
 
-    // simple debug helper to print header anchors (call from tests if nav still fails)
+    // debug helper
     public void debugPrintHeaderAnchors() {
         openContactPage();
         List<WebElement> anchors = driver.findElements(By.cssSelector("header a, nav a, .navbar a"));

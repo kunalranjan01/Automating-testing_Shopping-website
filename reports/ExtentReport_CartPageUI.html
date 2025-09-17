@@ -1,0 +1,3961 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">AutomationExercise - Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sept 16, 2025 01:31:01 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">VerifyRemovebuttondeletesanitem</a><a class="dropdown-item" href="#">Verifybehaviorwhenproductisoutofstock(best-effort)</a><a class="dropdown-item" href="#">Verifyfootercopyrightpresentoncartpage</a><a class="dropdown-item" href="#">VerifyContinuetoproductsreturnsusertoproductpage</a><a class="dropdown-item" href="#">Verifylogopresentoncartpage</a><a class="dropdown-item" href="#">Verifyproductappearsincart</a><a class="dropdown-item" href="#">Verifycartcounticonupdateswhenadding</a><a class="dropdown-item" href="#">VerifySignup/Loginnavfromcart(empty)works</a><a class="dropdown-item" href="#">VerifyTestCasesnavfromcart(empty)works</a><a class="dropdown-item" href="#">Verifydiscounts/couponsapplycorrectly(best-effort)</a><a class="dropdown-item" href="#">VerifycouponUIpresent(empty)</a><a class="dropdown-item" href="#">VerifyCartnavfromcart(empty)works</a><a class="dropdown-item" href="#">Verifymultipleproductsvisibleincart</a><a class="dropdown-item" href="#">VerifycartpageaccessibleviadirectURL</a><a class="dropdown-item" href="#">Verifyaccessibilitybasics(tabnavigation)onemptycartpage</a><a class="dropdown-item" href="#">VerifycartUIlayout(empty)</a><a class="dropdown-item" href="#">VerifyContactUsnavfromcart(empty)works</a><a class="dropdown-item" href="#">VerifyVideoTutorialsnavfromcart(empty)works</a><a class="dropdown-item" href="#">VerifyAPITestingnavfromcart(empty)works</a><a class="dropdown-item" href="#">Addproduct(s)fromhome/productsthennavigatetocart</a><a class="dropdown-item" href="#">VerifycartUIlayout(withproducts)</a><a class="dropdown-item" href="#">Verifyemptycartdisplayspropermessage</a><a class="dropdown-item" href="#">VerifyHomenavfromcart(empty)works</a><a class="dropdown-item" href="#">VerifyProceedToCheckoutnavigatestocheckout</a><a class="dropdown-item" href="#">VerifyProductsnavfromcart(empty)works</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="VerifycartpageaccessibleviadirectURL"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_cart_accessible_via_url_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:04 am</span> / <span>00:00:01:809</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_cart_accessible_via_url_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:04 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:06 am</span>
+<span class='badge badge-default'>00:00:01:809</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifycartpageaccessibleviadirectURL</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:04 am</td>
+        <td>
+          Check: isCartAccessibleViaUrl()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:04 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Result: cart URL contains /view_cart -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="Verifyemptycartdisplayspropermessage"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_empty_cart_message - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:06 am</span> / <span>00:00:01:738</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_empty_cart_message - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:06 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:08 am</span>
+<span class='badge badge-default'>00:00:01:738</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifyemptycartdisplayspropermessage</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Action: clearCart()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:06 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 am</td>
+        <td>
+          Result: clearCart -> empty=true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 am</td>
+        <td>
+          Check: isEmptyCartMessageDisplayed()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:07 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Result: empty cart message present -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="VerifyHomenavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_home_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:08 am</span> / <span>00:00:04:160</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_home_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:08 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:12 am</span>
+<span class='badge badge-default'>00:00:04:160</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyHomenavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Action: clickHomeAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:08 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:09 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:09 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:11 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Home]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Result: clickHomeAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="VerifyProductsnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_products_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:12 am</span> / <span>00:00:03:922</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_products_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:12 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:16 am</span>
+<span class='badge badge-default'>00:00:03:922</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyProductsnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Action: clickProductsAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:12 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:13 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:13 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:15 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> css selector: a[href='/products'], a[href='/products/']]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:15 am</td>
+        <td>
+          Result: clickProductsAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:15 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:16 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:16 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:16 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="VerifyCartnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_cart_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:16 am</span> / <span>00:00:02:646</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_cart_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:16 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:19 am</span>
+<span class='badge badge-default'>00:00:02:646</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyCartnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:16 am</td>
+        <td>
+          Action: clickCartAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:16 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:17 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:17 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:18 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Cart]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:18 am</td>
+        <td>
+          Result: clickCartAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:18 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag="VerifySignup/Loginnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_signup_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:19 am</span> / <span>00:00:02:601</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_signup_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:19 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:21 am</span>
+<span class='badge badge-default'>00:00:02:601</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifySignup/Loginnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Action: clickSignupLoginAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:19 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:20 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Signup / Login]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Result: clickSignupLoginAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag="VerifyTestCasesnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_testcases_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:21 am</span> / <span>00:00:02:705</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_testcases_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:21 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:24 am</span>
+<span class='badge badge-default'>00:00:02:705</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyTestCasesnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Action: clickTestCasesAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:21 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:22 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:22 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:23 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Test Cases]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:23 am</td>
+        <td>
+          Result: clickTestCasesAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/test_cases
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:23 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:24 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:24 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:24 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag="VerifyAPITestingnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_api_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:24 am</span> / <span>00:00:03:031</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_api_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:24 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:27 am</span>
+<span class='badge badge-default'>00:00:03:031</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyAPITestingnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:24 am</td>
+        <td>
+          Action: clickApiTestingAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:24 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:25 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:25 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:26 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: API Testing]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:26 am</td>
+        <td>
+          Result: clickApiTestingAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/api_list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:26 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:27 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:27 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:27 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag="VerifyVideoTutorialsnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_videos_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:27 am</span> / <span>00:00:05:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_videos_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:27 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:32 am</span>
+<span class='badge badge-default'>00:00:05:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyVideoTutorialsnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:27 am</td>
+        <td>
+          Action: clickVideoTutorialsAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:27 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:28 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:28 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:31 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Video Tutorials]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Result: clickVideoTutorialsAndVerifyThenBack -> true currentUrl=https://www.youtube.com/c/AutomationExercise
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag="VerifyContactUsnavfromcart(empty)works"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_contactus_nav_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:32 am</span> / <span>00:00:03:151</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_contactus_nav_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:32 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-default'>00:00:03:151</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyContactUsnavfromcart(empty)works</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Action: clickContactUsAndVerifyThenBack()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:32 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:33 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:33 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:35 am</td>
+        <td>
+          Performed safeClick on element: [[ChromeDriver: chrome on windows (fa66f1aa8bc1e4fe4aa4a773498386f9)] -> link text: Contact us]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:35 am</td>
+        <td>
+          Result: clickContactUsAndVerifyThenBack -> true currentUrl=https://www.automationexercise.com/contact_us
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:35 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:35 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag="Verifylogopresentoncartpage"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_logo_present_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:36 am</span> / <span>00:00:00:029</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_logo_present_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-default'>00:00:00:029</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifylogopresentoncartpage</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Check: isLogoPresent()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Result: logo present -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag="Verifyfootercopyrightpresentoncartpage"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_footer_present_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:36 am</span> / <span>00:00:00:750</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_footer_present_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-default'>00:00:00:750</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifyfootercopyrightpresentoncartpage</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Check: isFooterCopyrightPresent()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Result: footer copyright present -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag="VerifycartUIlayout(empty)"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_cart_layout_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:36 am</span> / <span>00:00:00:632</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_cart_layout_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:36 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:37 am</span>
+<span class='badge badge-default'>00:00:00:632</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifycartUIlayout(empty)</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Check: isCartLayoutPresent()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:36 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Result: cart layout present -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="14"
+          author=""
+          tag="VerifycouponUIpresent(empty)"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_coupon_ui_present_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:37 am</span> / <span>00:00:01:019</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">tc_coupon_ui_present_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:37 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:38 am</span>
+<span class='badge badge-default'>00:00:01:019</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifycouponUIpresent(empty)</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_coupon_ui_present_empty_20250916_013138_458.png' src="C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_coupon_ui_present_empty_20250916_013138_458.png">
+    <div class="title">Failure screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Check: isCouponFeaturePresent()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:37 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          Result: coupon feature present -> false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.myproject.tests.CartPageUITest.tc_coupon_ui_present_empty(CartPageUITest.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="Verifyaccessibilitybasics(tabnavigation)onemptycartpage"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_accessibility_empty - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:38 am</span> / <span>00:00:00:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_accessibility_empty - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:38 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:39 am</span>
+<span class='badge badge-default'>00:00:00:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifyaccessibilitybasics(tabnavigation)onemptycartpage</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          Check: basicTabNavigationWorks()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:38 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Result: active element after TAB -> A
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="Addproduct(s)fromhome/productsthennavigatetocart"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_add_product_and_navigate_to_cart - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:39 am</span> / <span>00:00:05:639</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_add_product_and_navigate_to_cart - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:39 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:45 am</span>
+<span class='badge badge-default'>00:00:05:639</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Addproduct(s)fromhome/productsthennavigatetocart</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Action: addFirstProductFromHomeOrProducts()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:39 am</td>
+        <td>
+          Action: openHomePage() - navigating to https://www.automationexercise.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:41 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:41 am</td>
+        <td>
+          Navigation to home page complete: https://www.automationexercise.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:42 am</td>
+        <td>
+          Performed safeClick on element: text='Add to cart' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:43 am</td>
+        <td>
+          Performed safeClick on element: text='' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:43 am</td>
+        <td>
+          Closed a modal (if present)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:43 am</td>
+        <td>
+          Added a product using add-to-cart button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:43 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:44 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:44 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:44 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:44 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Result: cart items count -> 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="Verifyproductappearsincart"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_product_shown_in_cart - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:45 am</span> / <span>00:00:01:015</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_product_shown_in_cart - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:45 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:46 am</span>
+<span class='badge badge-default'>00:00:01:015</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifyproductappearsincart</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:45 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Result: cart items count -> 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="Verifymultipleproductsvisibleincart"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_multiple_products_visible - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:46 am</span> / <span>00:00:05:545</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_multiple_products_visible - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:46 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:51 am</span>
+<span class='badge badge-default'>00:00:05:545</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifymultipleproductsvisibleincart</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Action: addMultipleProductsFromProducts(2)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:46 am</td>
+        <td>
+          Action: openProductsPage() - navigating to https://www.automationexercise.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:47 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:47 am</td>
+        <td>
+          Navigation to products page complete: https://www.automationexercise.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:48 am</td>
+        <td>
+          Performed safeClick on element: text='Add to cart' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:48 am</td>
+        <td>
+          Performed safeClick on element: text='' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:49 am</td>
+        <td>
+          Closed a modal (if present)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:49 am</td>
+        <td>
+          Performed safeClick on element: text='Add to cart' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:50 am</td>
+        <td>
+          Performed safeClick on element: text='' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:50 am</td>
+        <td>
+          Closed a modal (if present)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:50 am</td>
+        <td>
+          Result: added 2 products (requested 2)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:50 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:50 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Result: cart items count -> 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="VerifyRemovebuttondeletesanitem"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_remove_button_deletes_item - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:51 am</span> / <span>00:00:03:790</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_remove_button_deletes_item - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:51 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:55 am</span>
+<span class='badge badge-default'>00:00:03:790</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyRemovebuttondeletesanitem</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:51 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:52 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:52 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:52 am</td>
+        <td>
+          Result: cart items count -> 2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:52 am</td>
+        <td>
+          Action: removeFirstCartItem()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:52 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:53 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:53 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:53 am</td>
+        <td>
+          Performed safeClick on element: text='' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:54 am</td>
+        <td>
+          Removed first cart item
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:54 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:54 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Result: cart items count -> 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag="VerifyProceedToCheckoutnavigatestocheckout"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_proceed_to_checkout - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:55 am</span> / <span>00:00:02:159</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">tc_proceed_to_checkout - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:55 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:57 am</span>
+<span class='badge badge-default'>00:00:02:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyProceedToCheckoutnavigatestocheckout</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_proceed_to_checkout_20250916_013157_636.png' src="C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_proceed_to_checkout_20250916_013157_636.png">
+    <div class="title">Failure screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Action: getCartItemsCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:55 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:56 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:56 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:56 am</td>
+        <td>
+          Result: cart items count -> 1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:56 am</td>
+        <td>
+          Action: clickProceedToCheckout()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:56 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          No proceed to checkout element found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.myproject.tests.CartPageUITest.tc_proceed_to_checkout(CartPageUITest.java:144)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="21"
+          author=""
+          tag="VerifyContinuetoproductsreturnsusertoproductpage"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_continue_to_products - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:57 am</span> / <span>00:00:01:317</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">tc_continue_to_products - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:57 am</span>
+<span class='badge badge-danger'>09.16.2025 1:31:58 am</span>
+<span class='badge badge-default'>00:00:01:317</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifyContinuetoproductsreturnsusertoproductpage</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_continue_to_products_20250916_013158_961.png' src="C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_continue_to_products_20250916_013158_961.png">
+    <div class="title">Failure screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          Action: clickContinueToProducts()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:57 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          No continue button found
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.myproject.tests.CartPageUITest.tc_continue_to_products(CartPageUITest.java:150)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="22"
+          author=""
+          tag="Verifydiscounts/couponsapplycorrectly(best-effort)"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_coupons_apply - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:31:58 am</span> / <span>00:00:01:380</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">tc_coupons_apply - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:31:58 am</span>
+<span class='badge badge-danger'>09.16.2025 1:32:00 am</span>
+<span class='badge badge-default'>00:00:01:380</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifydiscounts/couponsapplycorrectly(best-effort)</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_coupons_apply_20250916_013200_342.png' src="C:\Users\Hp\eclipse-workspace\automationexercise-automation\reports\screenshots\tc_coupons_apply_20250916_013200_342.png">
+    <div class="title">Failure screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          Action: applyCoupon(DUMMYCOUPON123)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:31:58 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Coupon UI not present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.myproject.tests.CartPageUITest.tc_coupons_apply(CartPageUITest.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag="Verifycartcounticonupdateswhenadding"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_cart_count_updates_on_add - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:32:00 am</span> / <span>00:00:03:910</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_cart_count_updates_on_add - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:32:00 am</span>
+<span class='badge badge-danger'>09.16.2025 1:32:04 am</span>
+<span class='badge badge-default'>00:00:03:910</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifycartcounticonupdateswhenadding</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Action: getCartCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Result: cart count -> '1'
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Action: addFirstProductFromHomeOrProducts()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:00 am</td>
+        <td>
+          Action: openHomePage() - navigating to https://www.automationexercise.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:02 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:02 am</td>
+        <td>
+          Navigation to home page complete: https://www.automationexercise.com/
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:03 am</td>
+        <td>
+          Performed safeClick on element: text='Add to cart' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:03 am</td>
+        <td>
+          Performed safeClick on element: text='' href=''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Closed a modal (if present)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Added a product using add-to-cart button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Action: getCartCount()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Result: cart count -> ''
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag="Verifybehaviorwhenproductisoutofstock(best-effort)"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_out_of_stock_behavior - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:32:04 am</span> / <span>00:00:01:468</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_out_of_stock_behavior - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:32:04 am</span>
+<span class='badge badge-danger'>09.16.2025 1:32:05 am</span>
+<span class='badge badge-default'>00:00:01:468</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Verifybehaviorwhenproductisoutofstock(best-effort)</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Check: isOutOfStockBehaviorVisible()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:04 am</td>
+        <td>
+          Action: openProductsPage() - navigating to https://www.automationexercise.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Navigation to products page complete: https://www.automationexercise.com/products
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Result: isOutOfStockBehaviorVisible -> false
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author=""
+          tag="VerifycartUIlayout(withproducts)"
+          device="">
+          <div class="test-detail">
+            <p class="name">tc_cart_layout_with_products - com.myproject.tests.CartPageUITest</p>
+            <p class="text-sm">
+              <span>1:32:05 am</span> / <span>00:00:01:303</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">tc_cart_layout_with_products - com.myproject.tests.CartPageUITest</h5>
+<span class='badge badge-success'>09.16.2025 1:32:05 am</span>
+<span class='badge badge-danger'>09.16.2025 1:32:07 am</span>
+<span class='badge badge-default'>00:00:01:303</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">VerifycartUIlayout(withproducts)</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Check: isCartLayoutPresent()
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:05 am</td>
+        <td>
+          Action: openCartPage() - navigating to https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:07 am</td>
+        <td>
+          Document readyState=complete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:07 am</td>
+        <td>
+          Navigation to cart page complete: https://www.automationexercise.com/view_cart
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:32:07 am</td>
+        <td>
+          Result: cart layout present -> true
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:32:07 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:37 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>tc_coupon_ui_present_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:55 am</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>tc_proceed_to_checkout - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:57 am</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>tc_continue_to_products - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:58 am</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>tc_coupons_apply - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">25</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyRemovebuttondeletesanitem</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyRemovebuttondeletesanitem</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:51 am</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>tc_remove_button_deletes_item - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifybehaviorwhenproductisoutofstock(best-effort)</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifybehaviorwhenproductisoutofstock(best-effort)</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:32:04 am</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>tc_out_of_stock_behavior - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifyfootercopyrightpresentoncartpage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifyfootercopyrightpresentoncartpage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:36 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>tc_footer_present_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">VerifyContinuetoproductsreturnsusertoproductpage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyContinuetoproductsreturnsusertoproductpage</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:57 am</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>tc_continue_to_products - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifylogopresentoncartpage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifylogopresentoncartpage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:36 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>tc_logo_present_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifyproductappearsincart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifyproductappearsincart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:45 am</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>tc_product_shown_in_cart - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifycartcounticonupdateswhenadding</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifycartcounticonupdateswhenadding</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:32:00 am</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>tc_cart_count_updates_on_add - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifySignup/Loginnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifySignup/Loginnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:19 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>tc_signup_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyTestCasesnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyTestCasesnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:21 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>tc_testcases_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Verifydiscounts/couponsapplycorrectly(best-effort)</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifydiscounts/couponsapplycorrectly(best-effort)</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:58 am</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>tc_coupons_apply - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">VerifycouponUIpresent(empty)</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifycouponUIpresent(empty)</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:37 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>tc_coupon_ui_present_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyCartnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyCartnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:16 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>tc_cart_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifymultipleproductsvisibleincart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifymultipleproductsvisibleincart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:46 am</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>tc_multiple_products_visible - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifycartpageaccessibleviadirectURL</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifycartpageaccessibleviadirectURL</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:04 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>tc_cart_accessible_via_url_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifyaccessibilitybasics(tabnavigation)onemptycartpage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifyaccessibilitybasics(tabnavigation)onemptycartpage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:38 am</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>tc_accessibility_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifycartUIlayout(empty)</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifycartUIlayout(empty)</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:36 am</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>tc_cart_layout_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyContactUsnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyContactUsnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:32 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>tc_contactus_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyVideoTutorialsnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyVideoTutorialsnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:27 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>tc_videos_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyAPITestingnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyAPITestingnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:24 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>tc_api_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Addproduct(s)fromhome/productsthennavigatetocart</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Addproduct(s)fromhome/productsthennavigatetocart</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:39 am</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>tc_add_product_and_navigate_to_cart - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifycartUIlayout(withproducts)</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifycartUIlayout(withproducts)</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:32:05 am</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>tc_cart_layout_with_products - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Verifyemptycartdisplayspropermessage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Verifyemptycartdisplayspropermessage</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:06 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>tc_empty_cart_message - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyHomenavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyHomenavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:08 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>tc_home_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">VerifyProceedToCheckoutnavigatestocheckout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyProceedToCheckoutnavigatestocheckout</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>01:31:55 am</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>tc_proceed_to_checkout - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">VerifyProductsnavfromcart(empty)works</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>VerifyProductsnavfromcart(empty)works</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:31:12 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>tc_products_nav_empty - com.myproject.tests.CartPageUITest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sept 16, 2025 01:31:01 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sept 16, 2025 01:32:07 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>21</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='84%'>
+<b>21</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='16%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='9%'><b>21</b> events passed</small></div>
+<div>
+<small data-tooltip='1%'><b>4</b> events failed,
+<b data-tooltip='%'>204</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"tc_cart_accessible_via_url_empty - com.myproject.tests.CartPageUITest":1.809,"tc_empty_cart_message - com.myproject.tests.CartPageUITest":1.738,"tc_home_nav_empty - com.myproject.tests.CartPageUITest":4.16,"tc_products_nav_empty - com.myproject.tests.CartPageUITest":3.922,"tc_cart_nav_empty - com.myproject.tests.CartPageUITest":2.646,"tc_signup_nav_empty - com.myproject.tests.CartPageUITest":2.601,"tc_testcases_nav_empty - com.myproject.tests.CartPageUITest":2.705,"tc_api_nav_empty - com.myproject.tests.CartPageUITest":3.031,"tc_videos_nav_empty - com.myproject.tests.CartPageUITest":5.324,"tc_contactus_nav_empty - com.myproject.tests.CartPageUITest":3.151,"tc_logo_present_empty - com.myproject.tests.CartPageUITest":0.029,"tc_footer_present_empty - com.myproject.tests.CartPageUITest":0.75,"tc_cart_layout_empty - com.myproject.tests.CartPageUITest":0.632,"tc_coupon_ui_present_empty - com.myproject.tests.CartPageUITest":1.019,"tc_accessibility_empty - com.myproject.tests.CartPageUITest":0.966,"tc_add_product_and_navigate_to_cart - com.myproject.tests.CartPageUITest":5.639,"tc_product_shown_in_cart - com.myproject.tests.CartPageUITest":1.015,"tc_multiple_products_visible - com.myproject.tests.CartPageUITest":5.545,"tc_remove_button_deletes_item - com.myproject.tests.CartPageUITest":3.79,"tc_proceed_to_checkout - com.myproject.tests.CartPageUITest":2.159,"tc_continue_to_products - com.myproject.tests.CartPageUITest":1.317,"tc_coupons_apply - com.myproject.tests.CartPageUITest":1.38,"tc_cart_count_updates_on_add - com.myproject.tests.CartPageUITest":3.91,"tc_out_of_stock_behavior - com.myproject.tests.CartPageUITest":1.468,"tc_cart_layout_with_products - com.myproject.tests.CartPageUITest":1.303
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>VerifyRemovebuttondeletesanitem</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifybehaviorwhenproductisoutofstock(best-effort)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifyfootercopyrightpresentoncartpage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyContinuetoproductsreturnsusertoproductpage</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Verifylogopresentoncartpage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifyproductappearsincart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifycartcounticonupdateswhenadding</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifySignup/Loginnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyTestCasesnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifydiscounts/couponsapplycorrectly(best-effort)</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>VerifycouponUIpresent(empty)</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>VerifyCartnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifymultipleproductsvisibleincart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifycartpageaccessibleviadirectURL</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifyaccessibilitybasics(tabnavigation)onemptycartpage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifycartUIlayout(empty)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyContactUsnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyVideoTutorialsnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyAPITestingnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Addproduct(s)fromhome/productsthennavigatetocart</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifycartUIlayout(withproducts)</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Verifyemptycartdisplayspropermessage</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyHomenavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>VerifyProceedToCheckoutnavigatestocheckout</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>VerifyProductsnavfromcart(empty)works</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Author</td>
+<td>Automation Team</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 21,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 21,
+failEvents: 4,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 204
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

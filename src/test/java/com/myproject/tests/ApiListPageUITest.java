@@ -84,8 +84,9 @@ public class ApiListPageUITest {
 
     @Test(priority = 11, description = "Automation Exercise logo/button is present")
     public void tc_logo_present() {
-        Assert.assertTrue(page.isAutomationExerciseButtonPresent());
+        Assert.assertTrue(page.isLogoPresent(), "Automation Exercise logo should be present");
     }
+
 
     @Test(priority = 12, description = "API list page loads with endpoints listed")
     public void tc_api_list_loads_with_endpoints() {
